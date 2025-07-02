@@ -14,9 +14,9 @@ export default  function Displayname(){
                  }}>
             <h1>Full Name Display</h1>
             <p style={{display: "inline"}}>First Name:</p> 
-            <input type="text" required value = {fullName.firstname} onChange={(e) => {setFullName({...fullName,firstname: e.target.value})}} /> <br/>
+            <input type="text" required value = {fullName.firstname} onChange={(e) => {setFullName({...fullName,firstname: e.target.value,isNameSet:false})}} /> <br/>
             <p style={{display: "inline"}}  >Last Name:</p> 
-            <input type="text" required value={fullName.lastname}  onChange={(e) => {setFullName({...fullName,lastname: e.target.value})}}/><br/>
+            <input type="text" required value={fullName.lastname}  onChange={(e) => {setFullName({...fullName,lastname: e.target.value,isNameSet:false})}}/><br/>
             <button type="submit" >Submit</button>
         </form>
             {
