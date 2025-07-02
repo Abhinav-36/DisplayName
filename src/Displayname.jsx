@@ -20,7 +20,7 @@ export default  function Displayname(){
             <button type="submit" >Submit</button>
         </form>
             {
-                fullName.isNameSet ? <p>Full Name: {`${fullName.firstname} ${fullName.lastname}`}</p> : <p></p>
+                fullName.isNameSet ? <p>Full Name: {`${fullName.firstname} ${fullName.lastname}`}</p> : ""
             }
         </div>
         
